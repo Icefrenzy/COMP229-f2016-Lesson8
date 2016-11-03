@@ -16,6 +16,7 @@ namespace COMP229_f2016_Lesson8.Controllers
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
+            ViewBag.Title = "About";
 
             return View();
         }
@@ -23,6 +24,8 @@ namespace COMP229_f2016_Lesson8.Controllers
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
+            ViewBag.Title = "Contact";
+            ViewBag.Email = "jankevinmunar@gmail.com";
 
             return View();
         }
