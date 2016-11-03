@@ -17,19 +17,18 @@ namespace COMP229_f2016_Lesson8.Controllers
         }
 
         // GET: Browse
-        public string Browse(string genre)
+        public ActionResult Browse(string brand)
         {
             ViewBag.Title = "Browse";
-            string message = HttpUtility.HtmlEncode("Store.Browse, Genre = " + genre);
-            return message;
+            ViewBag.Message = "Brand: " + brand;
+            return View();
         }
 
         // GET: Details
-        public string Details(int id)
+        public ActionResult Details()
         {
             ViewBag.Title = "Details";
-            string message = "Store.Details, ID = " + id;
-            return message;
+            return View();
         }
     }
 }
